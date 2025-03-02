@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>密码安全检测工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>密码安全检测</h1>
+        <div class="password-input-container">
+            <input type="password" id="password" placeholder="请输入密码" autocomplete="off">
+            <button id="togglePassword" type="button">
+                <span class="show-password">👁️</span>
+            </button>
+        </div>
+        <div class="strength-meter">
+            <div class="strength-bar" id="strengthBar"></div>
+        </div>
+        <div class="strength-text" id="strengthText">密码强度: 未检测</div>
+        <div class="suggestions" id="suggestions">
+            <h3>安全建议</h3>
+            <ul id="suggestionsList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
